@@ -1,0 +1,486 @@
+/*	Less Framework 4 with 18/24 type presets
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 123px;
+	line-height: 132px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 76px;
+	line-height: 84px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 47px;
+	line-height: 48px;
+}
+
+.bigger, h3 {
+	font-size: 29px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 25px;
+	line-height: 30px;
+}
+
+body {
+	font: 18px/24px "Times New Roman", Times, serif;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{
+		background: rgb(98,30,45);
+		color:#fff;
+		}
+::-moz-selection 	{
+		background: rgb(98,30,45);
+		color:#fff;
+		}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {
+		-webkit-tap-highlight-color: rgb(98,30,45);
+		color:#fff;
+		}
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {
+	width: 992px;
+	background: #fff;
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+	margin:0 auto;
+	color:#000;
+}
+
+.left {
+		float:left;
+}
+
+.right {
+		float:right;
+}
+
+.clear {
+		clear:both;
+}
+
+p {
+	color:#686364;
+	font-size:12px;
+	text-align:justify;
+	font-family:Arial;
+}
+
+.border0 {
+	border:0 !important;
+}
+
+ul {
+	list-style:none;
+}
+
+a {
+	text-decoration:none;
+}
+
+a:hover {
+	color:#000;
+}
+	
+
+#header {
+		background:url('../images/graygrad.jpg') repeat-x;
+		height:103px;
+		border-bottom:1px solid #9c9c9c;
+}
+
+.logo {
+		padding:32px;
+}
+
+.navigation {
+	padding:20px;
+	font-family:Cambria , Times New Roman ;
+	}
+
+.navigation ul li {
+	float:left;
+	padding:19px;
+}
+
+.navigation ul>li+li{
+	background:url('../images/splitter.jpg') no-repeat scroll left top;	
+}
+
+.navigation ul li a {
+	color:#160407;
+}
+
+.navigation ul li a:hover {
+	color:#7a8c3d;
+}
+
+#banner {
+	background:#eeeeee;
+	color:#333232;
+	position:relative;
+	text-align:center;
+}
+
+#banner .left{
+	width:400px;
+	padding:40px;
+}
+
+#banner .right{
+	width:400px;
+}
+
+#banner h2 {
+	font-size:18px;
+	font-family:Cambria , Times New Roman;
+}
+
+#banner blockquote {
+	font-size:14px;
+	font-style:italic;
+}
+
+.calltoaction	{
+	background:url('../images/calltoact.jpg') no-repeat;
+	height:61px;
+	width:294px;
+	display:inline-block;
+	margin-top:10px;
+}
+
+.calltoaction:hover	{
+	background:url('../images/calltoacthover.jpg') no-repeat;
+}
+
+.browserwindow	{
+	background:url('../images/browser.png') no-repeat;
+	display:inline-block;
+	width:373px;
+	height:281px;
+	position:absolute;
+	top:25px;
+	right:25px;
+}
+
+.browserwindow img {
+	position:absolute;
+	top:48px;
+	left:27px;
+}
+
+.description {
+	border-top:1px solid #d2d2d2;
+	border-bottom:1px solid #d2d2d2;
+	margin:40px 40px 25px;
+}
+
+.description div {
+	width:29%;
+	padding:0 15px;
+	margin:10px 0;
+}
+
+.description p {
+	font-family:Arial;
+	color:#686364;
+	font-size:12px;
+	text-align:right;	
+}
+
+.description>div+div{
+	border-left:1px solid #d2d2d2;
+} 
+
+.description h2 {
+	font-family:Cambria;
+	font-size:18px;	
+	color:#490b0b;
+}
+
+.ipad {
+	background:url('../images/ipad.jpg') no-repeat;
+	width:145px;
+	height:182px;
+	margin:0 50px;
+	position:relative;
+}
+
+.ipad img {
+	left:19px;
+	top:19px;
+	position:absolute;
+}
+
+#footer{
+	background:#eee;
+	margin-top:20px;
+	padding:15px 15px 0;
+}
+
+#footer div {
+	width:32%;
+}
+
+#footer ul {
+	margin:5px 0;
+}
+
+#footer ul li { 
+	float:left;
+	font-size:12px;
+}
+
+#footer ul li a{
+	color:#000;
+}
+
+#footer ul li a:hover{
+	color:#3e3f40;
+}
+
+#footer .heading {
+	color:#490b0b;
+	font-size:14px;
+	font-family:Cambria,Times New Roman;
+}
+
+.cloud {
+	width:286px;
+	height:83px;
+	background:url('../images/cloud.png') no-repeat;
+	display:inline-block;
+	color:#fff;
+	font-family:Arial;
+	font-size:11px;
+	padding:20px 0 0 12px;
+}
+
+.testi {
+	font-family:Arial;
+	font-size:11px;
+	color:#3e3f40;
+}
+
+.profpic{
+	border:3px solid #000;
+	margin-right:10px;
+	margin-top:10px;
+}
+	
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 529px) and (max-width: 991px) {
+	
+body {
+		width: 712px;
+}
+
+.navigation {
+	padding:15px;
+	}
+
+#banner .left{
+	width:280px;
+	padding:30px;
+}
+
+.browserwindow	{
+	top:10px;
+	right:5px;
+}
+	
+.description div {
+	width:28%;
+	padding:0 15px;
+	margin:10px 0;
+}
+	
+.description h2 {
+	font-family:Cambria;
+	font-size:16px;	
+	color:#490b0b;
+}
+	
+.ipad {
+	margin:0 5px;
+}
+	
+.cloud {
+	background:#ccc;
+	color:#160407;
+	padding:10px 0 0 10px;
+	width:203px;
+}
+
+}
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (max-width: 528px) {
+	
+	body {
+		width: 252px;
+	}
+	
+#header {
+	height:60px;
+}
+
+.logo {
+	padding:19px 50px;
+}
+	
+.logo img {
+	width:150px;
+}
+
+.navigation {
+	padding:5px 16px;
+	font-size:12px;
+	}
+
+.navigation ul li{
+	padding:5px;
+}
+	
+.calltoaction {
+	display:none;
+}
+
+.navigation ul>li+li{
+	background:none;
+}
+
+#banner {
+	position:inherit;
+}
+	
+#banner .left{
+	width:200px;
+	padding:0px 25px;
+}
+	
+#banner .right{
+	display:none;
+}
+	
+.description{
+	margin:5px;
+}
+	
+.description div {
+	width:100%;
+	padding:0;
+}
+
+.description > div + div {
+	border-top:1px solid #D2D2D2;
+	border-left:0 ;
+}
+	
+.ipad {
+	margin:10px 55px;
+}
+	
+.greattext{
+	width:240px;
+}
+	
+#footer div {
+	width:100%;
+}
+	
+.cloud {
+	background:#ccc;
+	color:#160407;
+	padding:10px 0 0 10px;
+	width:215px;
+}
+	
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	body {
+	
+	}
+	
+}
